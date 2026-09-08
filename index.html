@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thar Roxx — Built for the Rough</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__logo">THAR<span>ROXX</span></a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#build">Build</a></li>
+    <li><a href="#colours">Colours</a></li>
+    <li><a href="#engine">Engine</a></li>
+    <li><a href="#interior">Interior</a></li>
+    <li><a href="#specs">Specs</a></li>
+    <li><a href="#variants">Variants</a></li>
+  </ul>
+  <a href="#variants" class="nav__cta">Book a Test Drive</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero__photo" style="background-image:url('images/thar-roxx-hero.jpg');" aria-hidden="true"></div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__contour" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Mahindra · 5-Door Adventure SUV</p>
+    <h1 class="hero__title">BUILT FOR<br>THE ROUGH ROAD</h1>
+    <p class="hero__sub">226mm of ground clearance. A 2850mm wheelbase. Two engines built to argue with any terrain you put in front of them. This is the Thar Roxx — walk through the build.</p>
+    <div class="hero__actions">
+      <a href="#build" class="btn btn--primary">Customize Yours</a>
+      <a href="#engine" class="btn btn--ghost">See the Engines</a>
+    </div>
+    <div class="hero__stats">
+      <div><strong>226mm</strong><span>Ground clearance</span></div>
+      <div><strong>650mm</strong><span>Wading depth</span></div>
+      <div><strong>4WD</strong><span>On diesel variants</span></div>
+    </div>
+  </div>
+  <div class="hero__scrollcue">Scroll to explore</div>
+</header>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="section overview" id="overview">
+  <div class="section__head reveal">
+    <p class="eyebrow">01 — Overview</p>
+    <h2>Five doors. Zero compromise.</h2>
+    <p class="section__lead">The Roxx keeps the Thar's ladder-frame toughness and adds real second-row space, a longer wheelbase, and a cabin built for the whole crew — not just the front seats.</p>
+  </div>
+  <div class="overview__grid">
+    <div class="stat-card reveal">
+      <strong>4428<span>mm</span></strong>
+      <p>Overall length</p>
+    </div>
+    <div class="stat-card reveal">
+      <strong>2850<span>mm</span></strong>
+      <p>Wheelbase</p>
+    </div>
+    <div class="stat-card reveal">
+      <strong>447<span>L</span></strong>
+      <p>Boot capacity</p>
+    </div>
+    <div class="stat-card reveal">
+      <strong>1888<span>kg</span></strong>
+      <p>Kerb weight</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILD / INTERACTIVE ============ -->
+<section class="section build" id="build">
+  <div class="section__head reveal">
+    <p class="eyebrow">02 — Build Yours</p>
+    <h2>Pick your rims. Look under the hood.</h2>
+    <p class="section__lead">Tap a wheel finish to see it fitted, or flip the panel to reveal what's driving it.</p>
+  </div>
+
+  <div class="build__stage reveal">
+    <div class="build__display">
+      <div class="build__toolbar">
+        <button class="mode-btn is-active" id="btnExterior" type="button">Exterior</button>
+        <button class="mode-btn" id="btnEngine" type="button">Reveal Engine</button>
+      </div>
+
+      <!-- CAR ILLUSTRATION -->
+      <img 
+    id="carPhoto"
+    class="car-photo"
+    src="images/thar-sport.webp"
+    alt="Thar Roxx with custom rims"
+>
+>
+
+      <!-- fuel toggle, appears in engine mode -->
+      <div class="fuel-toggle" id="fuelToggle" hidden>
+        <button class="fuel-btn is-active" data-fuel="petrol" type="button">Petrol</button>
+        <button class="fuel-btn" data-fuel="diesel" type="button">Diesel</button>
+      </div>
+    </div>
+
+    <div class="build__controls">
+      <h3>Wheel finish</h3>
+      <p class="fitted-label">Fitted: <span id="fittedName">Sport Alloy — 18"</span></p>
+      <div class="rim-swatches">
+        <button class="swatch is-active" data-rim="sport" data-name="Sport Alloy — 18&quot;" type="button">
+          <span class="swatch__ring"></span>Sport Alloy
+        </button>
+        <button class="swatch" data-rim="offroad" data-name="Trail Steelie — 18&quot;" type="button">
+          <span class="swatch__ring"></span>Trail Steelie
+        </button>
+        <button class="swatch" data-rim="diamond" data-name="Diamond Cut — 19&quot;" type="button">
+          <span class="swatch__ring"></span>Diamond Cut
+        </button>
+        <button class="swatch" data-rim="black" data-name="Roxx Blackout — 19&quot;" type="button">
+          <span class="swatch__ring"></span>Roxx Blackout
+        </button>
+      </div>
+      <p class="build__note">Rim styling shown here is illustrative. Actual wheel design and size vary by variant — 255/65 R18 on base trims, 255/60 R19 on top trims.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLOURS ============ -->
+<section class="section colours" id="colours">
+  <div class="section__head reveal">
+    <p class="eyebrow">03 — Colours</p>
+    <h2>Eight shades. One attitude.</h2>
+    <p class="section__lead">Stealth Black is the default. Tap a swatch to see the Roxx in every finish it comes in.</p>
+  </div>
+
+  <div class="colour-stage reveal">
+    <div class="colour-display">
+      <img id="colourImg" src="images/colours/tharroxxstealthblack.webp" alt="Mahindra Thar Roxx in Stealth Black">
+    </div>
+
+    <div class="colour-controls">
+      <p class="fitted-label">Viewing: <span id="colourName">Stealth Black</span></p>
+      <div class="colour-swatches">
+        <button class="cswatch is-active" data-img="images/colours/tharroxxstealthblack.webp" data-name="Stealth Black" style="--sw:#1c1c1c" type="button" aria-label="Stealth Black"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxeverestwhite.webp" data-name="Everest White" style="--sw:#eef1ee" type="button" aria-label="Everest White"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxbattleshipgrey.webp" data-name="Battleship Grey" style="--sw:#6d7278" type="button" aria-label="Battleship Grey"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxnebulablue.webp" data-name="Nebula Blue" style="--sw:#1d3a52" type="button" aria-label="Nebula Blue"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxdeepforest.webp" data-name="Deep Forest" style="--sw:#3b3e2c" type="button" aria-label="Deep Forest"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxtangored.webp" data-name="Tango Red" style="--sw:#9c1c2b" type="button" aria-label="Tango Red"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxburntsienna.webp" data-name="Burnt Sienna" style="--sw:#6d4429" type="button" aria-label="Burnt Sienna"></button>
+        <button class="cswatch" data-img="images/colours/tharroxxcitrineyellow.webp" data-name="Citrine Yellow" style="--sw:#bd9c2e" type="button" aria-label="Citrine Yellow"></button>
+      </div>
+      <p class="build__note">Colour availability varies by variant and transmission. Confirm the exact shade with your nearest dealer before booking.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGINE ============ -->
+<section class="section engine-section" id="engine">
+  <div class="section__head reveal">
+    <p class="eyebrow">04 — Engine</p>
+    <h2>Two engines. Both mean business.</h2>
+    <p class="section__lead">Petrol for quick, responsive city-to-highway driving. Diesel for torque, towing, and the option of 4WD when the tarmac runs out.</p>
+  </div>
+
+  <div class="engine-tabs reveal">
+    <button class="etab is-active" data-engine="petrol" type="button">2.0L Turbo Petrol</button>
+    <button class="etab" data-engine="diesel" type="button">2.2L Turbo Diesel</button>
+  </div>
+
+  <div class="engine-cards reveal">
+    <div class="engine-card" data-panel="petrol">
+      <div class="engine-figure">
+        <div class="gauge"><strong>174</strong><span>PS</span></div>
+        <div class="gauge"><strong>380</strong><span>Nm</span></div>
+      </div>
+      <ul class="engine-specs">
+        <li><span>Displacement</span><strong>1997 cc, 4-cylinder turbo-petrol</strong></li>
+        <li><span>Peak power</span><strong>~174 PS @ 5,000 rpm</strong></li>
+        <li><span>Peak torque</span><strong>~380 Nm @ 1,750–3,000 rpm</strong></li>
+        <li><span>Transmission</span><strong>6-speed manual or 6-speed torque-converter automatic</strong></li>
+        <li><span>Drivetrain</span><strong>Rear-wheel drive</strong></li>
+      </ul>
+    </div>
+    <div class="engine-card" data-panel="diesel" hidden>
+      <div class="engine-figure">
+        <div class="gauge"><strong>172</strong><span>PS</span></div>
+        <div class="gauge"><strong>400</strong><span>Nm</span></div>
+      </div>
+      <ul class="engine-specs">
+        <li><span>Displacement</span><strong>2184 cc, 4-cylinder turbo-diesel</strong></li>
+        <li><span>Peak power</span><strong>~172 PS @ 3,500 rpm</strong></li>
+        <li><span>Peak torque</span><strong>Up to ~400 Nm</strong></li>
+        <li><span>Transmission</span><strong>6-speed manual or 6-speed torque-converter automatic</strong></li>
+        <li><span>Drivetrain</span><strong>Rear-wheel drive, with 4WD available</strong></li>
+      </ul>
+    </div>
+  </div>
+  <p class="engine-disclaimer reveal">Figures are approximate and vary slightly by trim and transmission — confirm exact numbers for your chosen variant with a dealer.</p>
+</section>
+
+<!-- ============ INTERIOR / FEATURES ============ -->
+<section class="section interior" id="interior">
+  <div class="section__head reveal">
+    <p class="eyebrow">05 — Interior &amp; Tech</p>
+    <h2>Rugged outside. Considered inside.</h2>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">◎</div>
+      <h3>ADAS Level 2</h3>
+      <p>Driver-assist features for both highway cruising and dense traffic.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">⌁</div>
+      <h3>Brake Locking Differential</h3>
+      <p>Individual wheel braking on demand, purpose-built for tricky off-road lines.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">▣</div>
+      <h3>Disc Brakes, All Round</h3>
+      <p>Front and rear discs for consistent stopping power on and off the tarmac.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">⬒</div>
+      <h3>Ladder-Frame Chassis</h3>
+      <p>Body-on-frame construction built to take real off-road abuse.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">◫</div>
+      <h3>5-Door, 5-Seat Cabin</h3>
+      <p>Real second-row space, with a 447-litre boot behind it.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">⬡</div>
+      <h3>Independent Front Suspension</h3>
+      <p>Double wishbone up front, watt's-linkage rigid axle at the rear.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECS ============ -->
+<section class="section specs" id="specs">
+  <div class="section__head reveal">
+    <p class="eyebrow">06 — Full Specs</p>
+    <h2>The numbers, in one place.</h2>
+  </div>
+  <div class="specs__table reveal">
+    <div class="specs__row"><span>Length</span><strong>4,428 mm</strong></div>
+    <div class="specs__row"><span>Width</span><strong>1,870 mm</strong></div>
+    <div class="specs__row"><span>Height</span><strong>1,923 mm</strong></div>
+    <div class="specs__row"><span>Wheelbase</span><strong>2,850 mm</strong></div>
+    <div class="specs__row"><span>Ground clearance</span><strong>226 mm</strong></div>
+    <div class="specs__row"><span>Water wading depth</span><strong>650 mm</strong></div>
+    <div class="specs__row"><span>Boot capacity</span><strong>447 L</strong></div>
+    <div class="specs__row"><span>Kerb weight</span><strong>~1,888 kg</strong></div>
+    <div class="specs__row"><span>Fuel tank</span><strong>57 L</strong></div>
+    <div class="specs__row"><span>Tyres</span><strong>255/65 R18 – 255/60 R19</strong></div>
+    <div class="specs__row"><span>Seating / Doors</span><strong>5 seats / 5 doors</strong></div>
+  </div>
+</section>
+
+<!-- ============ VARIANTS / CTA ============ -->
+<section class="section variants" id="variants">
+  <div class="section__head reveal">
+    <p class="eyebrow">07 — Get One</p>
+    <h2>Ready to go off the grid?</h2>
+    <p class="section__lead">Prices start from around ₹12.39 Lakh (ex-showroom) and move up through the range with 4WD, automatic, and top-trim tech.</p>
+  </div>
+  <div class="variant-grid reveal">
+    <div class="variant-card">
+      <h3>MX1</h3>
+      <p>Entry trim · Petrol · 2WD · 6-speed manual</p>
+    </div>
+    <div class="variant-card">
+      <h3>AX3L</h3>
+      <p>Mid trim · Petrol or Diesel · Manual or Automatic</p>
+    </div>
+    <div class="variant-card is-featured">
+      <h3>AX5L</h3>
+      <p>Diesel · 4WD available · Manual or Automatic</p>
+    </div>
+    <div class="variant-card">
+      <h3>AX7L</h3>
+      <p>Top trim · Diesel 4WD · Full feature set</p>
+    </div>
+  </div>
+  <div class="variants__cta reveal">
+    <a href="#top" class="btn btn--primary">Book a Test Drive</a>
+    <p class="build__note">*Indicative pricing, ex-showroom. Confirm current on-road pricing with your nearest dealer.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Concept portfolio site, built for demonstration purposes. Not an official Mahindra property.</p>
+  <p class="made-by">MADE BY <span class="made-by__name">ABHAY</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
